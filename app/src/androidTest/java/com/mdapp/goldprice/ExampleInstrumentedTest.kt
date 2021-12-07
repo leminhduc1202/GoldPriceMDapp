@@ -1,4 +1,4 @@
-package mdideas.devapp.goldprice
+package com.mdapp.goldprice
 
 import androidx.test.platform.app.InstrumentationRegistry
 import androidx.test.ext.junit.runners.AndroidJUnit4

@@ -1,4 +1,4 @@
-package mdideas.devapp.goldprice
+package com.mdapp.goldprice
 
 import org.junit.Test
 

@@ -1,21 +1,25 @@
-package mdideas.devapp.goldprice
+package com.mdapp.goldprice
 
+import android.annotation.SuppressLint
 import android.os.Bundle
 import android.view.KeyEvent
 import android.view.MotionEvent
 import android.view.View
-import android.webkit.WebView
 import android.webkit.WebViewClient
 import androidx.appcompat.app.AppCompatActivity
+import com.mdapp.goldprice.databinding.ActivityMainBinding
 
 class MainActivity : AppCompatActivity() {
 
+    lateinit var binding: ActivityMainBinding
 
+    @SuppressLint("SetJavaScriptEnabled")
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_main)
+        binding = ActivityMainBinding.inflate(layoutInflater)
+        setContentView(binding.root)
 
-        val mWebView = findViewById<View>(R.id.webview) as WebView
+        val mWebView = binding.webview
         mWebView.loadUrl("https://goldprice.org/")
 
         val webSettings = mWebView.settings
@@ -27,7 +31,8 @@ class MainActivity : AppCompatActivity() {
             if (keyCode == KeyEvent.KEYCODE_BACK
 
                 && event.action == MotionEvent.ACTION_UP
-                && mWebView.canGoBack()) {
+                && mWebView.canGoBack()
+            ) {
                 mWebView.goBack()
                 return@OnKeyListener true
             }
