@@ -1,10 +1,12 @@
 package com.mdapp.goldprice
 
+import android.content.Intent
 import android.os.Bundle
 import android.util.Log.d
 import androidx.appcompat.app.AppCompatActivity
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.mdapp.goldprice.databinding.ActivityMainBinding
+import com.mdapp.goldprice.ui.HomeGold
 import retrofit2.Call
 import retrofit2.Callback
 import retrofit2.Response
@@ -31,6 +33,11 @@ class MainActivity : AppCompatActivity() {
         binding.recyclerUser.layoutManager = linearLayoutManager
 
         getMydata()
+
+        binding.btNextScreen.setOnClickListener {
+            val intent = Intent(this, HomeGold::class.java )
+            startActivity(intent)
+        }
 
 
 //        val mWebView = binding.webview

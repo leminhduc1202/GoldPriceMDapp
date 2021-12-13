@@ -23,7 +23,7 @@ class MyAdapter(
     }
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder {
-        var itemView = LayoutInflater.from(context).inflate(R.layout.row_items, parent, false)
+        val itemView = LayoutInflater.from(context).inflate(R.layout.row_items, parent, false)
         return ViewHolder(itemView)
     }
 
