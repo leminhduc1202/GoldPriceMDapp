@@ -1,4 +1,4 @@
-package com.mdapp.goldprice.ui
+package com.mdapp.goldprice.Getdatafromjson
 
 import android.content.Context
 import android.view.LayoutInflater

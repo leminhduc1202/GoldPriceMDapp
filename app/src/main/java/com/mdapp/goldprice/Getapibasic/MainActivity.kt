@@ -1,4 +1,4 @@
-package com.mdapp.goldprice
+package com.mdapp.goldprice.Getapibasic
 
 import android.content.Intent
 import android.os.Bundle
@@ -6,7 +6,7 @@ import android.util.Log.d
 import androidx.appcompat.app.AppCompatActivity
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.mdapp.goldprice.databinding.ActivityMainBinding
-import com.mdapp.goldprice.ui.HomeGold
+import com.mdapp.goldprice.Getdatafromjson.HomeGold
 import retrofit2.Call
 import retrofit2.Callback
 import retrofit2.Response

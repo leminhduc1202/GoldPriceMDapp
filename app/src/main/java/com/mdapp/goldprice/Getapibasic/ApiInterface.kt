@@ -1,4 +1,4 @@
-package com.mdapp.goldprice
+package com.mdapp.goldprice.Getapibasic
 
 import retrofit2.Call
 import retrofit2.http.GET

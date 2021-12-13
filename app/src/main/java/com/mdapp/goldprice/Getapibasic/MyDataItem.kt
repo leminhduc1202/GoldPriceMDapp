@@ -1,4 +1,4 @@
-package com.mdapp.goldprice
+package com.mdapp.goldprice.Getapibasic
 
 import com.google.gson.annotations.SerializedName
 

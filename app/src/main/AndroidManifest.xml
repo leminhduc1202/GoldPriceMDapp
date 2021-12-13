@@ -12,10 +12,10 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.GoldPrice">
         <activity
-            android:name=".ui.HomeGold"
+            android:name=".Getdatafromjson.HomeGold"
             android:exported="false" />
         <activity
-            android:name=".MainActivity"
+            android:name=".Getapibasic.MainActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
